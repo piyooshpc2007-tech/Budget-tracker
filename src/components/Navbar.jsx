@@ -1,9 +1,19 @@
 export function Navbar() {
   
-  return <div className="w-screen border border-b-1 border-gray-300 h-20 flex justify-between items-center px-16">
-        <div className="text-2xl font-bold text-green-400">Budget Tracker</div>
-        <a className="p-2 bg-black text-white rounded-md font-semibold
-        hover:cursor-pointer hover:bg-gray-800" href="https://github.com/piyooshpc2007-tech/Budget-tracker">Github</a>
-  </div>
+  return  (
+        <nav className="border-b border-stone-200 bg-white">
+            <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+                <div className="text-xl font-bold tracking-tight text-emerald-800 sm:text-2xl">BudgetTracker</div>
+                <a
+                    href="https://github.com/piyooshpc2007-tech/Budget-tracker"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-lg bg-stone-950 px-3 py-2 text-sm font-semibold text-white transition hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2"
+                >
+                    GitHub
+                </a>
+            </div>
+        </nav>
+    );
 }
 

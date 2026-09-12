@@ -1,7 +1,10 @@
-export function Button({label,onClick}){
-    return <div className="w-full bg-black text-white hover:cursor-pointer hover:bg-gray-700 p-2 rounded-md text-center">
-        <button onClick={onClick}>{label}</button>
-
-    </div>
-
+export function Button({ label }) {
+    return (
+        <button
+            type="submit"
+            className="w-full rounded-lg bg-stone-950 px-4 py-3 text-sm font-bold text-white transition hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2"
+        >
+            {label}
+        </button>
+    );
 }
